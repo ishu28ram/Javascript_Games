@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    font-family:monospace;
+    position: relative;
+
+}
+header{
+  
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(109, 108, 108);
+  
+}
+header h1{
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+.result-title{
+    width: 230px;
+    background-color: black;
+    height: 50px;
+    padding: 25px 40px;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    border: 2px solid black;
+}
+section{
+    background-color: aqua;
+    display: flex;
+     width: 100%;
+    height: 90vh;
+    position: relative;
+}
+img{
+    width:150px;
+    margin:20px;
+    cursor:pointer;
+    border-radius:50%;
+}
+section .left,section .right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+section .left{
+    background-color: pink;
+}
+section .right{
+    background-color:whitesmoke
+}
+
+.comp-score,.user-score{
+    position: absolute;
+    top:50px;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 16px;
+    border: 2px solid black;
+}
+.comp-score p,.user-score p{
+    font-size: 22px;
+    font-weight: bold;    ;
+}
+.comp-score{
+    right: 0;
+    background-color: white;
+}
+.user-score{
+    left: 0;
+    background-color:pink;
+}
+.comp{
+    cursor: not-allowed;
+}
+.comp.active{
+    filter: drop-shadow(10px 5px 5px red);
+}
+.user:hover{
+        filter: drop-shadow(10px 5px 5px gray);
+}
+.user.active{
+        filter: drop-shadow(10px 5px 5px green);
+
+}
+.result-title.won{
+    background-color: greenyellow;
+    color: black;
+}
+.result-title.lost{
+    background-color: red;
+    color: black;
+}
+.result-title.draw{
+    background-color: blue;
+    color: black;
+}
+@media only screen and (max-width:650px) {
+    section{
+        flex-direction: column;
+        height: 90%;
+    }
+    header h1{
+        font-size: 1.358rem;
+    }
+    section .left,section .right{
+        flex-direction: row; 
+        width: 100%;
+        height: 50% ;
+    }
+    img{
+        width:120px;
+        margin:5px;
+    }   
+    .result-title{
+        left:50%;
+        top:52%;
+        transform: translateY(-50%);
+        transform: translateX(-50%);
+    }
+    .comp-score{
+        right:0;
+        top:0;
+    }
+     .user-score{
+        left:0;
+        top:0;
+    }
+}

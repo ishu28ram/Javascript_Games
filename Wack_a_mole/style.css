@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+main{
+    width: 100vw;
+    height:100vh;
+    background-color: beige;
+    /* overflow: hidden; */
+    font-family: monospace;
+    position: relative;
+}
+header{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 10%;
+    font-weight: bold;
+    box-shadow: 0 4px 5px  rgba(0,0,0,0.2);
+
+}
+header h1{
+    font-size: 2rem;
+    padding:0 10px;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+
+}
+header p{
+    font-size: 1.2rem;
+
+}
+.mole-container{
+    width: 90%;
+    height: 80%;
+    overflow: hidden;
+    position: relative;
+    margin:20px auto;
+    padding:10px;
+   
+    
+}
+.mole{
+    position: absolute;
+    top:var(--Y);
+    left: var(--X);
+    width: 100px;
+    height: 100px;
+    background-image: url('Images/mole.jpg');
+    background-size: cover;
+    border-radius: 80%;
+}
+.modal{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+    color:beige;
+    background-color: rgba(0,0,0,0.8);
+    /* z-index: 10; */
+}
+.modal h1{
+    font-size: 2.5rem;
+    padding:0 10px ;
+    border-bottom: 3px solid beige;
+    border-left: 3px solid beige;
+    border-right: 3px solid beige;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-bottom: 30px;
+}
+.modal p{
+    font-size: 1.32rem;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+.modal h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.modal button{
+    padding: 20px 35px;
+    border-radius: 10px;
+    background-color: black;
+    color: beige;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+.modal button:hover{
+    filter: contrast(75%);
+}
+button,.mole{
+    cursor:pointer;
+}
+
+@media only screen and (max-width:650px){
+   header{
+    padding:0 5%;
+   }
+   header p{
+    font-size: 1rem;
+   }
+}
