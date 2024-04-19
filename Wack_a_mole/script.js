@@ -4,7 +4,7 @@ let timerEle = document.querySelector(".timer");
 let moleContainerEle = document.querySelector(".mole-container");
 let moleEle = document.querySelector(".mole");
 // let modalEle = document.querySelector(".modal");
-console.log("hello");
+console.log("hellos");
 let gameInterval;
 let score = 0;
 let counter = 60;
