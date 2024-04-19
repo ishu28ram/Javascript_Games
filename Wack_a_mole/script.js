@@ -3,9 +3,7 @@ let scoreEle = document.querySelector(".score");
 let timerEle = document.querySelector(".timer");
 let moleContainerEle = document.querySelector(".mole-container");
 let moleEle = document.querySelector(".mole");
-// let modalEle = document.querySelector(".modal");
-console.log("hellos");
-console.log("world");
+
 let gameInterval;
 let score = 0;
 let counter = 60;
